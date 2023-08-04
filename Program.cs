@@ -11,6 +11,8 @@ internal class Program
         System.Console.OutputEncoding = System.Text.Encoding.UTF8;
         System.Console.InputEncoding = enc1251;
 
+        // Если введенное число больше 7, то вывести “Привет”
+
         Console.Write("Please enter the number: ");
 
         double number = double.Parse(Console.ReadLine());
@@ -18,6 +20,7 @@ internal class Program
         if (number > 7)
             Console.WriteLine("Привет");
 
+        // Если введенное имя совпадает с “Вячеслав”, то вывести “Привет, Вячеслав”, если нет, то вывести "Нет такого имени"
 
         Console.Write("Please enter the name: ");
 
@@ -33,6 +36,8 @@ internal class Program
                 Console.WriteLine("Нет такого имени");
                 break;
         }
+
+        // На входе есть числовой массив, необходимо вывести элементы массива кратные 3
 
         Console.Write("Введите количество элементов массива: \t");
 
